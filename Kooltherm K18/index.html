@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+  <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260730-05-6814160","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,0","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHO2EIdDP0,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YADy3sAhvXQ,0","Oleo Script":"YACgEQQ14jI,0","Playfair Display":"YAFdJhem5V8,1","Poppins":"YAE5fPSY9qM,0","Press Start 2P":"YAFyGr-8pmQ,0","Source Sans 3":"YAG4lO1Mj10,0","Space Grotesk":"YAHO2sjPCSM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0"}}');</script><script src="/_sdk/a27874207e105461.telemetry_sdk.js" integrity="sha512-wgI5N9F7oA2h3vH+benMYIv4wGqTct4nKWakqgvfgRyBLmfYq8q/fi6gkfWKd2hMsyN+VQ/qOAOpxybwkcoxlA=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kooltherm K18 DPP</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fira+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue: #004b93;
+      --blue-dark: #003865;
+      --navy: #002b4e;
+      --ink: #17324a;
+      --muted: #647786;
+      --line: #dce4e9;
+      --surface: #f5f7f8;
+      --blue-wash: #eef5fb;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      object-position: center;
+    }
+
+    .app-wrapper {
+      width: 100%;
+      min-height: 100%;
+      background:
+        linear-gradient(rgba(0, 75, 147, .018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 75, 147, .018) 1px, transparent 1px),
+        var(--surface);
+      background-size: 28px 28px;
+    }
+
+    .heading-font { font-family: "Fira Sans", sans-serif; object-position: center;}
+
+    .masthead {
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 8px 30px rgba(0, 43, 78, .045);
+    }
+
+    .logo-shell {
+      display: flex;
+      align-items: center;
+      width: min(380px, 100%);
+      min-height: 108px;
+      padding: .65rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .logo-shell img {
+      display: block;
+      width: 100%;
+      height: 82px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .eyebrow-rule {
+      width: 28px;
+      height: 4px;
+      flex: none;
+      border-radius: 999px;
+      background: var(--blue);
+      object-position: center;
+    }
+
+    .qr-frame {
+      display: grid;
+      width: 92px;
+      height: 92px;
+      flex: none;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--blue-dark);
+      background:
+        linear-gradient(90deg, rgba(0, 56, 101, .045) 1px, transparent 1px),
+        linear-gradient(rgba(0, 56, 101, .045) 1px, transparent 1px),
+        #fff;
+      background-size: 10px 10px;
+    }
+
+    .dashboard-grid { align-items: start; }
+
+    .accordion-card {
+      position: center;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 5px 16px rgba(0, 43, 78, .045);
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+
+    .accordion-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: var(--blue);
+    }
+
+    .accordion-card:hover {
+      border-color: rgba(0, 75, 147, .25);
+      box-shadow: 0 12px 28px rgba(0, 43, 78, .075);
+      transform: translateY(-2px);
+    }
+
+    .accordion-card.open {
+      border-color: rgba(0, 75, 147, .34);
+      box-shadow: 0 14px 32px rgba(0, 43, 78, .09);
+    }
+
+    .accordion-trigger {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr) 34px;
+      gap: 1rem;
+      align-items: center;
+      width: 100%;
+      min-height: 126px;
+      padding: 1.5rem;
+      text-align: left;
+    }
+
+    .category-icon {
+      display: grid;
+      width: 48px;
+      height: 48px;
+      flex: none;
+      place-items: center;
+      border: 1px solid rgba(0, 75, 147, .1);
+      border-radius: 12px;
+      color: var(--blue);
+      background: var(--blue-wash);
+    }
+
+    .chevron-shell {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: #f8fafb;
+    }
+
+    .chevron { transition: transform .25s ease; }
+    .accordion-card.open .chevron { transform: rotate(180deg); }
+
+    .accordion-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      visibility: hidden;
+      transition: grid-template-rows .3s cubic-bezier(.16, 1, .3, 1), visibility .3s;
+    }
+
+    .accordion-card.open .accordion-content {
+      grid-template-rows: 1fr;
+      visibility: visible;
+    }
+
+    .accordion-inner { overflow: hidden; }
+
+    .field-list {
+      display: grid;
+      border-top: 1px solid var(--line);
+    }
+
+    .field-row {
+      display: grid;
+      grid-template-columns: 24px minmax(150px, .72fr) minmax(180px, 1.28fr);
+      gap: .8rem;
+      align-items: center;
+      min-height: 66px;
+      padding: .75rem 1.5rem;
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .field-row:last-child { border-bottom: 0; }
+
+    .field-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      color: var(--blue);
+      flex-shrink: 0;
+    }
+
+    .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .tools-panel{
+        width: 1200px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tools-grid {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 1rem;
+        margin: 2rem auto;
+        width: 100%;
+    }
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+        flex: 1;
+    }
+    
+    .form-control label {
+        color: rgb(0, 75, 147);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.14rem;
+        text-transform: uppercase;
+        font-family: "DM Sans", sans-serif;
+    }
+    
+    .form-control input {
+        width: 100%;
+        min-height: 38px;
+        padding: 8px 10px;
+    
+        border: 1px solid #d7e0e5;
+        border-radius: 9px;
+    
+        background:
+            linear-gradient(
+                to bottom,
+                rgba(255,255,255,.85),
+                rgba(247,249,250,.85)
+            );
+    
+        box-shadow: inset 0 1px 2px rgba(0, 43, 78, .025);
+    
+        color: var(--ink);
+        font-size: 14px;
+        font-family: "DM Sans", sans-serif;
+    }
+    
+    .form-control input:focus {
+        outline: none;
+        border-color: var(--blue);
+        box-shadow:
+            0 0 0 3px rgba(0,75,147,.15),
+            inset 0 1px 2px rgba(0,43,78,.025);
+    }
+
+    .empty-value {
+      width: 100%;
+      min-height: 38px;
+      border: 1px solid #d7e0e5;
+      border-radius: 9px;
+      background:
+        linear-gradient(to bottom, rgba(255,255,255,.85), rgba(247,249,250,.85));
+      box-shadow: inset 0 1px 2px rgba(0, 43, 78, .025);
+      padding: 8px 10px;
+      cursor: text;
+    }
+
+    .empty-value:focus {
+      outline: 2px solid var(--blue);
+      border-color: var(--blue);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.625rem 1rem;
+      border: none;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    .btn-primary {
+      background: rgb(0, 75, 147);
+      color: white;
+      box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    }
+    
+    .btn-primary:hover {
+      background: rgb(0, 56, 101);
+    }
+    
+    .btn-secondary {
+      background: rgb(231, 237, 241);
+      color: rgb(0, 56, 101);
+    }
+    
+    .btn-secondary:hover {
+      background: rgb(220, 228, 233);
+    }
+    
+    .actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    button:focus-visible {
+      outline: 3px solid rgba(0, 75, 147, .35);
+      outline-offset: 3px;
+    }
+
+    .reveal {
+      animation: rise .45s cubic-bezier(.16, 1, .3, 1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(9px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 720px) {
+      .logo-shell { min-height: 88px; }
+      .logo-shell img { height: 64px; }
+      .qr-frame { width: 76px; height: 76px; }
+
+      .accordion-trigger {
+        grid-template-columns: 44px minmax(0, 1fr) 32px;
+        min-height: 116px;
+        gap: .8rem;
+        padding: 1.2rem;
+      }
+
+      .category-icon { width: 44px; height: 44px; }
+
+      .field-row {
+        grid-template-columns: 24px minmax(0, 1fr);
+        gap: .55rem .7rem;
+        padding: .85rem 1.2rem;
+      }
+
+      .empty-value {
+        grid-column: 2;
+        min-height: 40px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+  <script src="/_sdk/935a53bc2e11fb8d.data_sdk.js" type="text/javascript" integrity="sha512-qr2oyPnEys1WebcOABaRh6hG77r5PWpqeWW6JTKbRJqly/INsfBi31CVNlTmHqjgeLpkVmmHZJUdxSx/32tOFQ=="></script>
+  <script src="/_sdk/6030e540d4419216.resizing_sdk.js" type="text/javascript" integrity="sha512-b5KWzyoXsbWP4smq4sftIi6Kts4YVBpBsz0BwCViwbBJkK64a3/Z6ZMdWA+qnplNcXw4mhZeqvQi3mOosiRJdA=="></script>
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.mx-auto{margin-left:auto;margin-right:auto}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-full{width:100%}.min-w-0{min-width:0px}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-8{gap:2rem}.rounded-2xl{border-radius:1rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-\[\#DCE4E9\]{--tw-border-opacity:1;border-color:rgb(220 228 233 / var(--tw-border-opacity, 1))}.p-5{padding:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-7{padding-top:1.75rem;padding-bottom:1.75rem}.py-8{padding-top:2rem;padding-bottom:2rem}.uppercase{text-transform:uppercase}.leading-tight{line-height:1.25}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}.sm\:px-8{padding-left:2rem;padding-right:2rem}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-\[minmax\(0\2c 1fr\)_300px\]{grid-template-columns:minmax(0,1fr) 300px}.lg\:flex-row{flex-direction:row}.lg\:items-end{align-items:flex-end}.lg\:justify-between{justify-content:space-between}.lg\:gap-12{gap:3rem}.lg\:py-10{padding-top:2.5rem;padding-bottom:2.5rem}.lg\:py-9{padding-top:2.25rem;padding-bottom:2.25rem}}</style></head>
+  <body data-template-id="__page-root" style="background: rgb(245, 247, 248);">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <div class="app-wrapper">
+   <header data-template-id="header-section" class="canva-header masthead w-full" style="background: rgb(255, 255, 255);">
+    <div class="mx-auto max-w-7xl px-5 py-7 sm:px-8 lg:py-9">
+     <div class="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12">
+      <div>
+       <div class="logo-shell reveal"><img data-template-id="kingspan-logo" class="canva-image" loading="lazy" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Kingspan_Group_%28building_materials_company%29_logo_with_lion.svg/1280px-Kingspan_Group_%28building_materials_company%29_logo_with_lion.svg.png" alt="Kingspan logo">
+       </div>
+       <div class="mt-7 flex items-center gap-3 reveal"><span class="eyebrow-rule" aria-hidden="true"></span> <span data-template-id="eyebrow-text" class="canva-tag uppercase" style="color: rgb(0, 75, 147); font-weight: 700; font-style: normal; font-size: 12px; letter-spacing: 0.14rem;">PRODUCT TRANSPARENCY</span>
+       </div>
+       <h1 data-template-id="page-title" class="canva-text heading-font mt-3 leading-tight reveal" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 44px; line-height: 1.05;">Digital Product Passport</h1>
+       <p data-template-id="page-subtitle" class="canva-text mt-3 max-w-3xl reveal" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.5;">A clear, reusable framework for product identity, technical performance, compliance, materials, environmental impact, circularity, use and end-of-life information.</p>
+      </div>
+      <aside data-template-id="qr-panel" class="canva-panel rounded-2xl border border-[#DCE4E9] p-5 reveal" aria-label="QR code placeholder" style="background: rgb(247, 249, 250);">
+       <div class="flex items-center justify-between gap-4">
+        <div class="min-w-0">
+         <p data-template-id="qr-label" class="canva-text" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 15px;">QR placeholder</p>
+         <p data-template-id="qr-helper" class="canva-text mt-1" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Reserved for the product passport link.</p>
+        </div>
+        <div class="qr-frame" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="qr-code" style="width: 48px; height: 48px; color: var(--blue-dark);" class="lucide lucide-qr-code"><rect width="5" height="5" x="3" y="3" rx="1"></rect><rect width="5" height="5" x="16" y="3" rx="1"></rect><rect width="5" height="5" x="3" y="16" rx="1"></rect><path d="M21 16h-3a2 2 0 0 0-2 2v3"></path><path d="M21 21v.01"></path><path d="M12 7v3a2 2 0 0 1-2 2H7"></path><path d="M3 12h.01"></path><path d="M12 3h.01"></path><path d="M12 16v.01"></path><path d="M16 12h1"></path><path d="M21 12v.01"></path><path d="M12 21v-1"></path></svg>
+        </div>
+       </div>
+      </aside>
+     </div>
+    </div>
+   </header>
+       <main class="container">
+    <section class="tools-panel" aria-label="Product passport tools">
+      <div class="tools-grid">
+        <div class="form-control"><label for="passport-url">Passport URL</label><input id="passport-url" placeholder="https://..."></div>
+        <div class="form-control"><label for="passport-name">Product / file name</label><input id="passport-name" placeholder="Digital Product Passport"></div>
+        <div class="actions">
+          <button class="btn btn-primary" id="generate-qr" type="button">Generate QR</button>
+          <button class="btn btn-secondary" id="print-pdf" type="button">Generate PDF</button>
+        </div>
+      </div>
+      <input id="json-file" type="file" accept="application/json" hidden="">
+      <div class="status" id="status" aria-live="polite"></div>
+    </section>
+        <main class="mx-auto w-full max-w-7xl px-5 py-8 sm:px-8 lg:py-10">
+                <section aria-labelledby="dashboard-title">
+                 <div class="mb-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+                  <div>
+                   <p data-template-id="dashboard-eyebrow" class="canva-tag uppercase" style="color: rgb(0, 75, 147); font-weight: 700; font-style: normal; font-size: 11px; letter-spacing: 0.14rem;">PASSPORT CATEGORIES</p>
+                   <h2 id="dashboard-title" data-template-id="dashboard-title" class="canva-text heading-font mt-1" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 30px;">Product information dashboard</h2>
+                   <p data-template-id="dashboard-description" class="canva-text mt-2 max-w-3xl" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 15px; line-height: 1.5;">Open any category to access its structured blank fields. The template is ready to be completed for different products.</p>
+                  </div>
+                  <div class="flex flex-wrap gap-2"><button data-template-id="expand-all-button" id="expand-all" class="canva-button inline-flex items-center gap-2 rounded-xl px-4 py-2.5 shadow-sm" type="button" style="background: rgb(0, 75, 147); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 15px;">Expand all</button> <button data-template-id="collapse-all-button" id="collapse-all" class="canva-button inline-flex items-center gap-2 rounded-xl px-4 py-2.5" type="button" style="background: rgb(231, 237, 241); color: rgb(0, 56, 101); font-weight: 600; font-style: normal; font-size: 15px;">Collapse all</button>
+                  </div>
+                 </div>
+                 <div class="dashboard-grid grid gap-5 lg:grid-cols-2">
+                  <article data-template-id="identity-card" class="canva-card accordion-card reveal open" style="background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="true" aria-controls="identity-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="scan-line" class="lucide lucide-scan-line h-6 w-6"><path d="M3 7V5a2 2 0 0 1 2-2h2"></path><path d="M17 3h2a2 2 0 0 1 2 2v2"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2"></path><line x1="7" x2="17" y1="12" y2="12"></line></svg></span> <span> <span data-template-id="identity-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">Product Identity &amp; Traceability</span> <span data-template-id="identity-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Product identifiers, manufacturing records and traceability details.</span> </span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="identity-content" class="accordion-content" aria-hidden="false">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="tag" class="lucide lucide-tag h-4 w-4"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l6.58-6.58c.94-.94.94-2.48 0-3.42L12 2Z"></path><path d="M7 7h.01"></path></svg></span>
+                       <p data-template-id="identity-product-name" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Product name</p>
+                       <div class="empty-value" aria-label="Empty Product name field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="boxes" class="lucide lucide-boxes h-4 w-4"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"></path><path d="m7 16.5-4.74-2.85"></path><path d="m7 16.5 5-3"></path><path d="M7 16.5v5.17"></path><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"></path><path d="m17 16.5-5-3"></path><path d="m17 16.5 4.74-2.85"></path><path d="M17 16.5v5.17"></path><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"></path><path d="M12 8 7.26 5.15"></path><path d="m12 8 4.74-2.85"></path><path d="M12 13.5V8"></path></svg></span>
+                       <p data-template-id="identity-product-family" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Product family/category</p>
+                       <div class="empty-value" aria-label="Empty Product family or category field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="qr-code" class="lucide lucide-qr-code h-4 w-4"><rect width="5" height="5" x="3" y="3" rx="1"></rect><rect width="5" height="5" x="16" y="3" rx="1"></rect><rect width="5" height="5" x="3" y="16" rx="1"></rect><path d="M21 16h-3a2 2 0 0 0-2 2v3"></path><path d="M21 21v.01"></path><path d="M12 7v3a2 2 0 0 1-2 2H7"></path><path d="M3 12h.01"></path><path d="M12 3h.01"></path><path d="M12 16v.01"></path><path d="M16 12h1"></path><path d="M21 12v.01"></path><path d="M12 21v-1"></path></svg></span>
+                       <p data-template-id="identity-product-code" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Product code</p>
+                       <div class="empty-value" aria-label="Empty Product code field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layers" class="lucide lucide-layers h-4 w-4"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span>
+                       <p data-template-id="identity-model-variant" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Model/variant</p>
+                       <div class="empty-value" aria-label="Empty Model or variant field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="ruler" class="lucide lucide-ruler h-4 w-4"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg></span>
+                       <p data-template-id="identity-dimensions" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Dimensions</p>
+                       <div class="empty-value" aria-label="Empty Dimensions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="scale" class="lucide lucide-scale h-4 w-4"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg></span>
+                       <p data-template-id="identity-weight" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Weight</p>
+                       <div class="empty-value" aria-label="Empty Weight field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="fingerprint" class="lucide lucide-fingerprint h-4 w-4"><path d="M2 12C2 6.5 6.5 2 12 2a10 10 0 0 1 8 4"></path><path d="M5 19.5C5.5 18 6 15 6 12c0-.7.12-1.37.34-2"></path><path d="M17.29 21.02c.12-.6.43-2.3.5-3.02"></path><path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4"></path><path d="M8.65 22c.21-.66.45-1.32.57-2"></path><path d="M14 13.12c0 2.38 0 6.38-1 8.88"></path><path d="M2 16h.01"></path><path d="M21.8 16c.2-2 .131-5.354 0-6"></path><path d="M9 6.8a6 6 0 0 1 9 5.2c0 .47 0 1.17-.02 2"></path></svg></span>
+                       <p data-template-id="identity-unique-id" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Unique product identifier</p>
+                       <div class="empty-value" aria-label="Empty Unique product identifier field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-key" class="lucide lucide-file-key h-4 w-4"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><circle cx="10" cy="16" r="2"></circle><path d="m16 10-4.5 4.5"></path><path d="m15 11 1 1"></path></svg></span>
+                       <p data-template-id="identity-dpp-number" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">DPP number</p>
+                       <div class="empty-value" aria-label="Empty DPP number field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar" class="lucide lucide-calendar h-4 w-4"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg></span>
+                       <p data-template-id="identity-dpp-update" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">DPP last update date</p>
+                       <div class="empty-value" aria-label="Empty DPP last update date field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package h-4 w-4"><path d="M16.5 9.4 7.55 4.24"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg></span>
+                       <p data-template-id="identity-batch-serial" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Batch/serial number</p>
+                       <div class="empty-value" aria-label="Empty Batch or serial number field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar" class="lucide lucide-calendar h-4 w-4"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg></span>
+                       <p data-template-id="identity-manufacturing-date" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Manufacturing date</p>
+                       <div class="empty-value" aria-label="Empty Manufacturing date field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="factory" class="lucide lucide-factory h-4 w-4"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M17 18h1"></path><path d="M12 18h1"></path><path d="M7 18h1"></path></svg></span>
+                       <p data-template-id="identity-manufacturing-site" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Manufacturing site</p>
+                       <div class="empty-value" aria-label="Empty Manufacturing site field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-branch" class="lucide lucide-git-branch h-4 w-4"><line x1="6" x2="6" y1="3" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg></span>
+                       <p data-template-id="identity-production-line" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Production line</p>
+                       <div class="empty-value" aria-label="Empty Production line field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package h-4 w-4"><path d="M16.5 9.4 7.55 4.24"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg></span>
+                       <p data-template-id="identity-production-batch" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Production batch</p>
+                       <div class="empty-value" aria-label="Empty Production batch field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail h-4 w-4"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span>
+                       <p data-template-id="identity-contact-point" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Contact point for product information</p>
+                       <div class="empty-value" aria-label="Empty Contact point for product information field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                  <article data-template-id="performance-card" class="canva-card accordion-card reveal open" style="animation-delay: 0.04s; background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="true" aria-controls="performance-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="gauge" class="lucide lucide-gauge h-6 w-6"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg></span> <span><span data-template-id="performance-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">Product Performance &amp; Technical Properties</span><span data-template-id="performance-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Declared technical characteristics, resistance and product lifespan.</span></span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="performance-content" class="accordion-content" aria-hidden="false">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="binary" class="lucide lucide-binary h-4 w-4"><rect x="14" y="14" width="4" height="6" rx="2"></rect><rect x="6" y="4" width="4" height="6" rx="2"></rect><path d="M6 20h4"></path><path d="M14 10h4"></path><path d="M6 14h2v6"></path><path d="M14 4h2v6"></path></svg></span>
+                       <p data-template-id="performance-classification" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Product classification</p>
+                       <div class="empty-value" aria-label="Empty Product classification field" contenteditable="true"><br></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="target" class="lucide lucide-target h-4 w-4"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></span>
+                       <p data-template-id="performance-intended-use" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Intended use/application</p>
+                       <div class="empty-value" aria-label="Empty Intended use or application field" contenteditable="true"><br></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="flame" class="lucide lucide-flame h-4 w-4"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg></span>
+                       <p data-template-id="performance-fire" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Fire performance</p>
+                       <div class="empty-value" aria-label="Empty Fire performance field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-down" class="lucide lucide-arrow-down h-4 w-4"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></span>
+                       <p data-template-id="performance-compressive-strength" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Compressive strength</p>
+                       <div class="empty-value" aria-label="Empty Compressive strength field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="volume-2" class="lucide lucide-volume-2 h-4 w-4"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg></span>
+                       <p data-template-id="performance-acoustic" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Acoustic performance</p>
+                       <div class="empty-value" aria-label="Empty Acoustic performance field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield" class="lucide lucide-shield h-4 w-4"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
+                       <p data-template-id="performance-durability" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Durability performance</p>
+                       <div class="empty-value" aria-label="Empty Durability performance field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="droplet" class="lucide lucide-droplet h-4 w-4"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></span>
+                       <p data-template-id="performance-moisture" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Moisture resistance</p>
+                       <div class="empty-value" aria-label="Empty Moisture resistance field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="activity" class="lucide lucide-activity h-4 w-4"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg></span>
+                       <p data-template-id="performance-mechanical" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Mechanical resistance</p>
+                       <div class="empty-value" aria-label="Empty Mechanical resistance field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" class="lucide lucide-clock h-4 w-4"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+                       <p data-template-id="performance-lifetime" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Expected product lifetime</p>
+                       <div class="empty-value" aria-label="Empty Expected product lifetime field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="award" class="lucide lucide-award h-4 w-4"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg></span>
+                       <p data-template-id="performance-warranty" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Warranty period</p>
+                       <div class="empty-value" aria-label="Empty Warranty period field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                  <article data-template-id="certifications-card" class="canva-card accordion-card reveal" style="animation-delay: 0.08s; background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="certifications-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="award" class="lucide lucide-award h-6 w-6"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg></span> <span><span data-template-id="certifications-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">Certifications &amp; Compliance</span><span data-template-id="certifications-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Regulatory markings, certificates, standards and test evidence.</span></span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="certifications-content" class="accordion-content" aria-hidden="true">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-check" class="lucide lucide-file-check h-4 w-4"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="m9 15 2 2 4-4"></path></svg></span>
+                       <p data-template-id="certifications-ce-marking" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">CE marking</p>
+                       <div class="empty-value" aria-label="Empty CE marking field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="award" class="lucide lucide-award h-4 w-4"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg></span>
+                       <p data-template-id="certifications-product" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Product certification</p>
+                       <div class="empty-value" aria-label="Empty Product certification field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="flame" class="lucide lucide-flame h-4 w-4"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path></svg></span>
+                       <p data-template-id="certifications-fire" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Fire certification</p>
+                       <div class="empty-value" aria-label="Empty Fire certification field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield" class="lucide lucide-shield h-4 w-4"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
+                       <p data-template-id="certifications-quality" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Quality certification</p>
+                       <div class="empty-value" aria-label="Empty Quality certification field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="file-text" class="lucide lucide-file-text h-4 w-4"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line><line x1="10" x2="8" y1="9" y2="9"></line></svg></span>
+                       <p data-template-id="certifications-iso" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">ISO</p>
+                       <div class="empty-value" aria-label="Empty ISO field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="leaf" class="lucide lucide-leaf h-4 w-4"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></span>
+                       <p data-template-id="certifications-environmental" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Environmental certification</p>
+                       <div class="empty-value" aria-label="Empty Environmental certification field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clipboard" class="lucide lucide-clipboard h-4 w-4"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path></svg></span>
+                       <p data-template-id="certifications-test-results" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Test results</p>
+                       <div class="empty-value" aria-label="Empty Test results field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar" class="lucide lucide-calendar h-4 w-4"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg></span>
+                       <p data-template-id="certifications-validity" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Certificates validity</p>
+                       <div class="empty-value" aria-label="Empty Certificates validity field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                  <article data-template-id="materials-card" class="canva-card accordion-card reveal" style="animation-delay: 0.12s; background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="materials-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="layers" class="lucide lucide-layers h-6 w-6"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span> <span><span data-template-id="materials-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">Material Composition</span><span data-template-id="materials-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Components, sources, recycled content and substance information.</span></span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="materials-content" class="accordion-content" aria-hidden="true">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="component" class="lucide lucide-component h-4 w-4"><path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path><path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path><path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path><path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path></svg></span>
+                       <p data-template-id="materials-main-components" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Main components</p>
+                       <div class="empty-value" aria-label="Empty Main components field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pie-chart" class="lucide lucide-pie-chart h-4 w-4"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg></span>
+                       <p data-template-id="materials-component-proportion" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Proportion of main components</p>
+                       <div class="empty-value" aria-label="Empty Proportion of main components field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="box" class="lucide lucide-box h-4 w-4"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg></span>
+                       <p data-template-id="materials-insulation" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Insulation</p>
+                       <div class="empty-value" aria-label="Empty Insulation field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package h-4 w-4"><path d="M16.5 9.4 7.55 4.24"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg></span>
+                       <p data-template-id="materials-raw-materials" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Raw materials</p>
+                       <div class="empty-value" aria-label="Empty Raw materials field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin h-4 w-4"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+                       <p data-template-id="materials-origin" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Material origin</p>
+                       <div class="empty-value" aria-label="Empty Material origin field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="truck" class="lucide lucide-truck h-4 w-4"><path d="M10 17h4V5H2v12h3"></path><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5"></path><path d="M14 17h1"></path><circle cx="7.5" cy="17.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg></span>
+                       <p data-template-id="materials-supplier" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Material supplier</p>
+                       <div class="empty-value" aria-label="Empty Material supplier field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="globe" class="lucide lucide-globe h-4 w-4"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span>
+                       <p data-template-id="materials-raw-origin" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Raw material origin</p>
+                       <div class="empty-value" aria-label="Empty Raw material origin field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><i data-lucide="barcode" class="h-4 w-4"></i></span>
+                       <p data-template-id="materials-batch-serial" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Material batch/serial number</p>
+                       <div class="empty-value" aria-label="Empty Material batch or serial number field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="refresh-cw" class="lucide lucide-refresh-cw h-4 w-4"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg></span>
+                       <p data-template-id="materials-recycled-percentage" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Recycled content percentage</p>
+                       <div class="empty-value" aria-label="Empty Recycled content percentage field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="alert-triangle" class="lucide lucide-alert-triangle h-4 w-4"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg></span>
+                       <p data-template-id="materials-hazardous" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Hazardous substances</p>
+                       <div class="empty-value" aria-label="Empty Hazardous substances field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield" class="lucide lucide-shield h-4 w-4"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>
+                       <p data-template-id="materials-safety" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Material safety classification</p>
+                       <div class="empty-value" aria-label="Empty Material safety classification field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                  <article data-template-id="environment-card" class="canva-card accordion-card reveal" style="animation-delay: 0.16s; background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="environment-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="leaf" class="lucide lucide-leaf h-6 w-6"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></span> <span><span data-template-id="environment-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">Environmental Impact</span><span data-template-id="environment-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Resource use, emissions, carbon and lifecycle assessment data.</span></span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="environment-content" class="accordion-content" aria-hidden="true">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" class="lucide lucide-zap h-4 w-4"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span>
+                       <p data-template-id="environment-energy" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Energy consumption</p>
+                       <div class="empty-value" aria-label="Empty Energy consumption field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="droplet" class="lucide lucide-droplet h-4 w-4"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path></svg></span>
+                       <p data-template-id="environment-water" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Water consumption</p>
+                       <div class="empty-value" aria-label="Empty Water consumption field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="wind" class="lucide lucide-wind h-4 w-4"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path><path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path><path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path></svg></span>
+                       <p data-template-id="environment-emissions" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Emissions</p>
+                       <div class="empty-value" aria-label="Empty Emissions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="cloud" class="lucide lucide-cloud h-4 w-4"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg></span>
+                       <p data-template-id="environment-carbon-footprint" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Carbon footprint</p>
+                       <div class="empty-value" aria-label="Empty Carbon footprint field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="factory" class="lucide lucide-factory h-4 w-4"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path><path d="M17 18h1"></path><path d="M12 18h1"></path><path d="M7 18h1"></path></svg></span>
+                       <p data-template-id="environment-embodied-carbon" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Embodied carbon</p>
+                       <div class="empty-value" aria-label="Empty Embodied carbon field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bar-chart" class="lucide lucide-bar-chart h-4 w-4"><line x1="12" x2="12" y1="20" y2="10"></line><line x1="18" x2="18" y1="20" y2="4"></line><line x1="6" x2="6" y1="20" y2="16"></line></svg></span>
+                       <p data-template-id="environment-lifecycle" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Lifecycle assessment data</p>
+                       <div class="empty-value" aria-label="Empty Lifecycle assessment data field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sun" class="lucide lucide-sun h-4 w-4"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></span>
+                       <p data-template-id="environment-renewable-share" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Renewable energy share</p>
+                       <div class="empty-value" aria-label="Empty Renewable energy share field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                  <article data-template-id="circularity-card" class="canva-card accordion-card reveal" style="animation-delay: 0.2s; background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="circularity-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="refresh-cw" class="lucide lucide-refresh-cw h-6 w-6"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg></span> <span><span data-template-id="circularity-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">Circularity &amp; Resource Efficiency</span><span data-template-id="circularity-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Reuse, repair, recycling and continued material value.</span></span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="circularity-content" class="accordion-content" aria-hidden="true">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="refresh-cw" class="lucide lucide-refresh-cw h-4 w-4"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg></span>
+                       <p data-template-id="circularity-recyclability-rate" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Recyclability rate</p>
+                       <div class="empty-value" aria-label="Empty Recyclability rate field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="repeat" class="lucide lucide-repeat h-4 w-4"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg></span>
+                       <p data-template-id="circularity-reusability" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Reusability potential</p>
+                       <div class="empty-value" aria-label="Empty Reusability potential field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="percent" class="lucide lucide-percent h-4 w-4"><line x1="19" x2="5" y1="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg></span>
+                       <p data-template-id="circularity-recyclable-content" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Recyclable content</p>
+                       <div class="empty-value" aria-label="Empty Recyclable content field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" class="lucide lucide-settings h-4 w-4"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                       <p data-template-id="circularity-replaceable-parts" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Replaceable parts</p>
+                       <div class="empty-value" aria-label="Empty Replaceable parts field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="wrench" class="lucide lucide-wrench h-4 w-4"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></span>
+                       <p data-template-id="circularity-repairability" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Repairability information</p>
+                       <div class="empty-value" aria-label="Empty Repairability information field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles h-4 w-4"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path><path d="M5 3v4"></path><path d="M19 17v4"></path><path d="M3 5h4"></path><path d="M17 19h4"></path></svg></span>
+                       <p data-template-id="circularity-second-life" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Second-life options</p>
+                       <div class="empty-value" aria-label="Empty Second-life options field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" class="lucide lucide-users h-4 w-4"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+                       <p data-template-id="circularity-partners" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Recycling partners</p>
+                       <div class="empty-value" aria-label="Empty Recycling partners field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                  <article data-template-id="installation-card" class="canva-card accordion-card reveal" style="animation-delay: 0.24s; background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="installation-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="wrench" class="lucide lucide-wrench h-6 w-6"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></span> <span><span data-template-id="installation-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">Installation, Use &amp; Maintenance</span><span data-template-id="installation-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Guidance for safe installation, handling, storage and care.</span></span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="installation-content" class="accordion-content" aria-hidden="true">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open" class="lucide lucide-book-open h-4 w-4"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg></span>
+                       <p data-template-id="installation-instructions" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Installation instructions</p>
+                       <div class="empty-value" aria-label="Empty Installation instructions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="alert-triangle" class="lucide lucide-alert-triangle h-4 w-4"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg></span>
+                       <p data-template-id="installation-safety" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Safety instructions</p>
+                       <div class="empty-value" aria-label="Empty Safety instructions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package h-4 w-4"><path d="M16.5 9.4 7.55 4.24"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg></span>
+                       <p data-template-id="installation-handling" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Handling instructions</p>
+                       <div class="empty-value" aria-label="Empty Handling instructions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="home" class="lucide lucide-home h-4 w-4"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></span>
+                       <p data-template-id="installation-storage" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Storage instructions</p>
+                       <div class="empty-value" aria-label="Empty Storage instructions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="wrench" class="lucide lucide-wrench h-4 w-4"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></span>
+                       <p data-template-id="installation-maintenance" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Maintenance &amp; cleaning instructions</p>
+                       <div class="empty-value" aria-label="Empty Maintenance and cleaning instructions field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                  <article data-template-id="end-of-life-card" class="canva-card accordion-card reveal" style="animation-delay: 0.28s; background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="end-of-life-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="refresh-cw" class="lucide lucide-refresh-cw h-6 w-6"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg></span> <span><span data-template-id="end-of-life-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">End-of-Life Management</span><span data-template-id="end-of-life-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Dismantling, recovery, recycling and disposal guidance.</span></span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="end-of-life-content" class="accordion-content" aria-hidden="true">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings" class="lucide lucide-settings h-4 w-4"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                       <p data-template-id="end-of-life-dismantling" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Dismantling instructions</p>
+                       <div class="empty-value" aria-label="Empty Dismantling instructions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="help-circle" class="lucide lucide-help-circle h-4 w-4"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg></span>
+                       <p data-template-id="end-of-life-instructions" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">End-of-life instructions</p>
+                       <div class="empty-value" aria-label="Empty End-of-life instructions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="refresh-cw" class="lucide lucide-refresh-cw h-4 w-4"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg></span>
+                       <p data-template-id="end-of-life-recycling" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Recycling instructions</p>
+                       <div class="empty-value" aria-label="Empty Recycling instructions field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trash-2" class="lucide lucide-trash-2 h-4 w-4"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" x2="10" y1="11" y2="17"></line><line x1="14" x2="14" y1="11" y2="17"></line></svg></span>
+                       <p data-template-id="end-of-life-disposal" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Disposal guidance</p>
+                       <div class="empty-value" aria-label="Empty Disposal guidance field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                  <article data-template-id="packaging-card" class="canva-card accordion-card reveal" style="animation-delay: 0.32s; background: rgb(255, 255, 255);">
+                   <h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="packaging-content"> <span class="category-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package h-6 w-6"><path d="M16.5 9.4 7.55 4.24"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg></span> <span><span data-template-id="packaging-title" class="canva-text heading-font block" style="color: rgb(0, 56, 101); font-weight: 700; font-style: normal; font-size: 21px; line-height: 1.2;">Packaging Information</span><span data-template-id="packaging-helper" class="canva-text mt-1 block" style="color: rgb(100, 119, 134); font-weight: 400; font-style: normal; font-size: 13px; line-height: 1.4;">Packaging composition and associated environmental information.</span></span> <span class="chevron-shell"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="chevron-down" class="lucide lucide-chevron-down chevron h-5 w-5"><path d="m6 9 6 6 6-6"></path></svg></span> </button></h3>
+                   <div id="packaging-content" class="accordion-content" aria-hidden="true">
+                    <div class="accordion-inner">
+                     <div class="field-list">
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="package" class="lucide lucide-package h-4 w-4"><path d="M16.5 9.4 7.55 4.24"></path><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" x2="12" y1="22" y2="12"></line></svg></span>
+                       <p data-template-id="packaging-materials" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Packaging materials</p>
+                       <div class="empty-value" aria-label="Empty Packaging materials field" contenteditable="true"></div>
+                      </div>
+                      <div class="field-row">
+                       <span class="field-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="leaf" class="lucide lucide-leaf h-4 w-4"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></span>
+                       <p data-template-id="packaging-environmental-data" class="canva-text" style="color: rgb(23, 50, 74); font-weight: 600; font-style: normal; font-size: 14px;">Packaging environmental data</p>
+                       <div class="empty-value" aria-label="Empty Packaging environmental data field" contenteditable="true"></div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </article>
+                 </div>
+                </section>
+               </main></main>
+        
+   <footer data-template-id="footer-section" class="canva-footer mt-6 w-full" style="background: rgb(0, 43, 78);">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-2 px-5 py-6 sm:flex-row sm:px-8">
+     <p data-template-id="footer-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 15px;">Digital Product Passport Template</p>
+     <p data-template-id="footer-values" class="canva-text" style="color: rgb(184, 202, 213); font-weight: 400; font-style: normal; font-size: 13px;">Transparency • Traceability • Circularity</p>
+    </div>
+   </footer>
+  </div>
+  <script src="/_sdk/b23f1f6ec78e9bd4.editing_sdk.js" integrity="sha512-WFdQutvUZzxrmcHkL8cbfuFDTeF8Cn8Bt3yqX/a/OdiqPz/t9UcjsIsZK7D+tMTmC2JTwhwRJNyfcHmIWhG8Wg=="></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  lucide.createIcons();
+  loadProductData();
+
+  const cards = Array.from(document.querySelectorAll(".accordion-card"));
+
+  async function loadProductData() {
+    try {
+      const response = await fetch("./Kooltherm_data.json");
+      
+      if (!response.ok) {
+        throw new Error("Kooltherm_data.json not found");
+      }
+
+      const data = await response.json();
+
+      document.querySelectorAll(".field-row").forEach(row => {
+
+        const label = row.querySelector("p[data-template-id]");
+        const field = row.querySelector(".empty-value");
+
+        if (!label || !field) return;
+
+        const key = label.dataset.templateId;
+
+        console.log("Field key:", key);
+        console.log("JSON value:", data[key]);
+
+        if (data[key] !== undefined) {
+          field.innerHTML = data[key];
+
+          const fields = Array.from(
+          document.querySelectorAll(".empty-value")
+          );
+
+          const index = fields.indexOf(field);
+
+          if (index !== -1) {
+            localStorage.setItem(
+              `dpp-field-${index}`,
+              data[key]
+            );
+          }
+        }
+      });
+
+    console.log("Product data loaded successfully");
+    } 
+        
+    catch (error) {
+
+    console.log(
+      "No json available:",
+      error.message);
+    }
+  }
+
+  function setCardState(card, open) {
+    const trigger = card.querySelector(".accordion-trigger");
+    const content = card.querySelector(".accordion-content");
+
+    card.classList.toggle("open", open);
+    trigger.setAttribute("aria-expanded", String(open));
+    content.setAttribute("aria-hidden", String(!open));
+  }
+
+  cards.forEach((card) => {
+    card.querySelector(".accordion-trigger").addEventListener("click", () => {
+      setCardState(card, !card.classList.contains("open"));
+    });
+  });
+
+  document.getElementById("expand-all").addEventListener("click", () => {
+    cards.forEach((card) => setCardState(card, true));
+  });
+
+  document.getElementById("collapse-all").addEventListener("click", () => {
+    cards.forEach((card) => setCardState(card, false));
+  });   
+
+  document.getElementById("print-pdf").addEventListener("click", generatePDF);
+
+  async function generatePDF() {
+
+    const { jsPDF } = window.jspdf;
+
+    const filename =
+        document.getElementById("passport-name").value.trim() ||
+        "Digital Product Passport";
+
+    const currentState = cards.map(card =>
+        card.classList.contains("open")
+    );
+
+    cards.forEach(card => setCardState(card, true));
+
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    const element = document.querySelector(".app-wrapper");
+
+    const canvas = await html2canvas(element, {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: "#ffffff"
+    });
+
+    const imgData = canvas.toDataURL("image/png");
+
+    const pdf = new jsPDF("p", "mm", "a4");
+
+    const pdfWidth = 210;
+    const pageHeight = 297;
+
+    const imgWidth = pdfWidth;
+    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+    let heightLeft = imgHeight;
+    let position = 0;
+
+    pdf.addImage(
+        imgData,
+        "PNG",
+        0,
+        position,
+        imgWidth,
+        imgHeight
+    );
+
+    heightLeft -= pageHeight;
+
+    while (heightLeft > 0) {
+
+        position = heightLeft - imgHeight;
+
+        pdf.addPage();
+
+        pdf.addImage(
+            imgData,
+            "PNG",
+            0,
+            position,
+            imgWidth,
+            imgHeight
+        );
+
+        heightLeft -= pageHeight;
+    }
+
+    pdf.save(`${filename}.pdf`);
+
+    cards.forEach((card, index) => {
+        setCardState(card, currentState[index]);
+    });
+}
+    
+  const fields = document.querySelectorAll(".empty-value");
+
+  fields.forEach((field, index) => {
+  
+    field.contentEditable = true;
+
+    
+    const savedValue = localStorage.getItem(`dpp-field-${index}`);
+    if (savedValue) {
+      field.textContent = savedValue;
+    }
+
+   
+    field.addEventListener("input", () => {
+      localStorage.setItem(
+        `dpp-field-${index}`,
+        field.textContent.trim()
+      );
+    });
+  });
+
+  document.getElementById("generate-qr").addEventListener("click", () => {
+
+    const url = document.getElementById("passport-url").value;
+
+    if (!url) {
+        alert("Please enter a Passport URL.");
+        return;
+    }
+
+    const qrFrame = document.querySelector(".qr-frame");
+
+    qrFrame.innerHTML = "";
+
+    new QRCode(qrFrame, {text:url,width:90,height:90,colorDark:'#003865',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.H});
+  });
+});
+</script>
+ 
+</body>
+</html>
