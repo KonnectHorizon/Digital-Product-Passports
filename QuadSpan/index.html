@@ -900,6 +900,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const key = label.dataset.templateId;
 
+        console.log("Field key:", key);
+        console.log("JSON value:", data[key]);
+
         if (data[key] !== undefined) {
 
           field.textContent = data[key];
