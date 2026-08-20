@@ -883,10 +883,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadProductData() {
     try {
-      const response = await fetch("./product_data.json");
+      const response = await fetch("./QuadSpan_data.json");
       
       if (!response.ok) {
-        throw new Error("product_data.json not found");
+        throw new Error("QuadSpan_data.json not found");
       }
 
       const data = await response.json();
@@ -925,7 +925,7 @@ document.addEventListener("DOMContentLoaded", () => {
     catch (error) {
 
     console.log(
-      "No product_data.json available:",
+      "No json available:",
       error.message);
     }
   }
