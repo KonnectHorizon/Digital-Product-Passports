@@ -905,7 +905,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (data[key] !== undefined) {
 
-          field.textContent = data[key];
+          field.innerHTML = data[key];
 
           const fields = Array.from(
           document.querySelectorAll(".empty-value")
