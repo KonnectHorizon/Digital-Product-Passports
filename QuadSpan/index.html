@@ -898,21 +898,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.querySelectorAll(".field-row").forEach(row => {
 
-            const label =
-                row.querySelector("p");
+            const label = row.querySelector("p");
 
-            const field =
-                row.querySelector(".empty-value");
+            const field = row.querySelector(".empty-value");
 
             if (!label || !field) return;
 
-            const key =
-                label.dataset.templateId;
+            const key = label.dataset.templateId;
+
+          console.log(key);
 
             if (data[key] !== undefined) {
-
                 field.textContent = data[key];
-
             }
 
         });
