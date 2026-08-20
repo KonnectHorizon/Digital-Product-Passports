@@ -880,6 +880,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const cards = Array.from(document.querySelectorAll(".accordion-card"));
 
+  loadProductData();
+
   async function loadProductData() {
 
     try {
@@ -923,8 +925,6 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
   }
-
-  loadProductData();
 
   function setCardState(card, open) {
     const trigger = card.querySelector(".accordion-trigger");
