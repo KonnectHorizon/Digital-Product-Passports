@@ -877,49 +877,56 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   lucide.createIcons();
+  loadProductData();
 
   const cards = Array.from(document.querySelectorAll(".accordion-card"));
 
-  loadProductData();
-
   async function loadProductData() {
-
     try {
+      const response = await fetch("./product_data.json");
+      
+      if (!response.ok) {
+        throw new Error("product_data.json not found");
+      }
 
-        const response =
-            await fetch("./QuadSpan_data.json");
+      const data = await response.json();
 
-        if (!response.ok) {
-            throw new Error("JSON file not found");
+      document.querySelectorAll(".field-row").forEach(row => {
+
+        const label = row.querySelector("p[data-template-id]");
+        const field = row.querySelector(".empty-value");
+
+        if (!label || !field) return;
+
+        const key = label.dataset.templateId;
+
+        if (data[key] !== undefined) {
+
+          field.textContent = data[key];
+
+          const fields = Array.from(
+          document.querySelectorAll(".empty-value")
+          );
+
+          const index = fields.indexOf(field);
+
+          if (index !== -1) {
+            localStorage.setItem(
+              `dpp-field-${index}`,
+              data[key]
+            );
+          }
         }
+      });
 
-        const data =
-            await response.json();
+    console.log("Product data loaded successfully");
+    } 
+        
+    catch (error) {
 
-        document.querySelectorAll(".field-row").forEach(row => {
-
-            const label = row.querySelector("p");
-
-            const field = row.querySelector(".empty-value");
-
-            if (!label || !field) return;
-
-            const key = label.dataset.templateId;
-
-          console.log(key);
-
-            if (data[key] !== undefined) {
-                field.textContent = data[key];
-            }
-
-        });
-
-    } catch (error) {
-
-        console.error(
-            "Failed to load product data:",
-            error
-        );
+    console.log(
+      "No product_data.json available:",
+      error.message);
     }
   }
 
