@@ -877,8 +877,60 @@
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   lucide.createIcons();
+  loadProductData();
 
   const cards = Array.from(document.querySelectorAll(".accordion-card"));
+
+  async function loadProductData() {
+    try {
+      const response = await fetch("./RMG600_data.json");
+      
+      if (!response.ok) {
+        throw new Error("RMG600_data.json not found");
+      }
+
+      const data = await response.json();
+
+      document.querySelectorAll(".field-row").forEach(row => {
+
+        const label = row.querySelector("p[data-template-id]");
+        const field = row.querySelector(".empty-value");
+
+        if (!label || !field) return;
+
+        const key = label.dataset.templateId;
+
+        console.log("Field key:", key);
+        console.log("JSON value:", data[key]);
+
+        if (data[key] !== undefined) {
+          field.innerHTML = data[key];
+
+          const fields = Array.from(
+          document.querySelectorAll(".empty-value")
+          );
+
+          const index = fields.indexOf(field);
+
+          if (index !== -1) {
+            localStorage.setItem(
+              `dpp-field-${index}`,
+              data[key]
+            );
+          }
+        }
+      });
+
+    console.log("Product data loaded successfully");
+    } 
+        
+    catch (error) {
+
+    console.log(
+      "No json available:",
+      error.message);
+    }
+  }
 
   function setCardState(card, open) {
     const trigger = card.querySelector(".accordion-trigger");
